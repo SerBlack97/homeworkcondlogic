@@ -8,11 +8,14 @@ const lemonMan = document.getElementById("lemon");
 
 //attack function
 function attack(){
+
 //miss precentage
 if (Math.random() < 0.2){
     healthTxt.textContent = "Miss";
     return;
 }
+
+//damage calc
     const minDmg = 5;
     const maxDmg = 10;
     const totalDmg = Math.floor(Math.random() * (maxDmg - minDmg +1)) + minDmg;
